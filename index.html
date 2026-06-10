@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skywatch</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="app-title"><span>🌤</span> Skywatch</div>
+            <button id="themeBtn">🌙 Dark</button>
+        </div>
+
+        <div class="search-section">
+            <input type="text" id="cityInput" placeholder="Search a city…" />
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="errorMsg" class="error" style="display:none;"></div>
+
+        <div class="main-layout">
+            <div id="weatherCard" style="display:none;"></div>
+            <div class="favorites-section">
+                <h3>Saved cities</h3>
+                <div id="favoritesList"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
